@@ -9,10 +9,11 @@ Earlier changes are recorded in the workspace [`CHANGELOG.md`](../CHANGELOG.md).
 
 ## [Unreleased]
 
-### Fixed
+## [0.2.3] - 2026-09-15
 
-- The WebSocket handshake requests the `graphql-transport-ws` subprotocol and asserts the negotiated value. Without it the client could not connect to this framework's own GraphQL server, nor to Apollo Server or graphql-ws.
-- The client waits for a real `connection_ack` instead of proceeding unacked when the socket closes or the first frame is not text, and dropping a subscription no longer panics outside a runtime.
+### Changed
+
+- Dependencies bumped to their latest releases: `http` 1.4 → 1.5, `tokio` 1.52 → 1.53, `tokio-tungstenite` 0.29 → 0.30, `tokio` 1.52 → 1.53.
 
 ## [0.2.2] - 2026-08-04
 
